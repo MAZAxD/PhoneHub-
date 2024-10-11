@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Samsung</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #f4f4f4; /* Fondo claro y moderno */
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh; /* Para ocupar al menos toda la altura de la ventana */
+    }
+
+    .navbar {
+      background-color: #011EDB; /* Azul para la barra de navegación */
+    }
+
+    .navbar-brand {
+      color: #ffffff; /* Blanco para el nombre de PhoneHub */
+      font-size: 1.5em; /* Tamaño más grande para la marca */
+    }
+
+    .nav-link {
+      color: #ffffff; /* Blanco para los enlaces */
+      font-size: 0.9em; /* Tamaño más pequeño para los nombres de las páginas */
+    }
+
+    .dropdown-menu {
+      background-color: #011EDB; /* Azul para el menú desplegable */
+    }
+
+    .dropdown-item {
+      color: #ffffff; /* Blanco para los elementos del menú desplegable */
+    }
+
+    .dropdown-item:hover {
+      background-color: #333333; /* Negro más claro para el hover */
+    }
+
+    .navbar-toggler {
+      border-color: rgba(255, 255, 255, 0.1); /* Color de borde transparente para el botón de navegación */
+    }
+
+    .navbar-toggler-icon {
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(99, 99, 99, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"); /* Tres barras grises */
+    }
+
+    .product-card {
+      margin: 20px auto;
+      padding: 20px;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      background-color: #ffffff;
+    }
+
+    .carousel-item img {
+      width: 100%;
+      height: auto;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      padding: 20px 0;
+      margin-top: auto; /* Coloca el footer al final de la página */
+    }
+
+    .footer-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      max-width: 1200px;
+      margin: auto;
+      padding: 0 20px;
+    }
+
+    .footer-content div {
+      flex: 1;
+      margin: 10px;
+    }
+
+    .footer-content h3 {
+      margin-bottom: 15px;
+    }
+
+    .footer-content form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .footer-content input, .footer-content button {
+      padding: 10px;
+      margin: 5px 0;
+      border-radius: 5px;
+      border: none;
+      width: 100%;
+    }
+
+    .footer-content button {
+      background-color: #555;
+      color: white;
+      cursor: pointer;
+    }
+
+    .footer-content button:hover {
+      background-color: #777;
+    }
+
+    @media (max-width: 768px) {
+      .footer-content {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .footer-content div {
+        margin: 20px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Barra de navegación -->
+  <nav class="navbar navbar-expand-lg">
+    <a class="navbar-brand" href="../index.html">PhoneHub</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="Smartphones.html" id="smartphonesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Smartphones
+          </a>
+          <div class="dropdown-menu" aria-labelledby="smartphonesDropdown">
+            <a class="dropdown-item" href="../paginas/S24.html">Galaxy S24 Ultra</a>
+            <a class="dropdown-item" href="../paginas/Flip5.html">Galaxy Z Flip5</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="Electrónica.html" id="electronicaDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Televisor
+          </a>
+          <div class="dropdown-menu" aria-labelledby="electronicaDropdown">
+            <a class="dropdown-item" href="../paginas/NeoQLED.html">Neo QLED 8K Smart TV</a>
+            <a class="dropdown-item" href="../paginas/S95D.html">OLED 4K S95D Smart TV</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="Audifonos.html" id="audifonosDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Lavadora
+          </a>
+          <div class="dropdown-menu" aria-labelledby="audifonosDropdown">
+            <a class="dropdown-item" href="../paginas/spoke.html">Lavadora spoke</a>
+            <a class="dropdown-item" href="../paginas/LavadoraSecadora.html">Lavadora Secadora 22Kg </a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="Reloges.html" id="relojesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Laptops
+          </a>
+          <div class="dropdown-menu" aria-labelledby="relojesDropdown">
+            <a class="dropdown-item" href="../paginas/Book4.html">Galaxy Book4</a>
+            <a class="dropdown-item" href="../paginas/Book4Pro.html">Galaxy Book4 Pro 360</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="Laptops.html" id="laptopsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Reloges
+          </a>
+          <div class="dropdown-menu" aria-labelledby="laptopsDropdown">
+            <a class="dropdown-item" href="../paginas/Watch6.html">Galaxy Watch6</a>
+            <a class="dropdown-item" href="../paginas/Watch5.html">Galaxy Watch5 Pro</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="Parlantes.html" id="parlantesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Parlantes
+          </a>
+          <div class="dropdown-menu" aria-labelledby="parlantesDropdown">
+            <a class="dropdown-item" href="../paginas/Buds2.html">Galaxy Buds2 Pro</a>
+            <a class="dropdown-item" href="../paginas/Soundbar.html">Soundbar HW-Q990D 11.1.4 </a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!-- Contenido principal -->
+  <div class="container">
+    <div class="product-card">
+      <h2 class="text-center">Soundbar HW-Q990D 11.1.4</h2>
+      
+      <div id="productCarousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#productCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#productCarousel" data-slide-to="1"></li>
+          <li data-target="#productCarousel" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="../imagenes/par,1.avif" alt="Imagen 1">
+          </div>
+          <div class="carousel-item">
+            <img src="../imagenes/par,2.png" alt="Imagen 2">
+          </div>
+          <div class="carousel-item">
+            <img src="../imagenes/par,3.png" alt="Imagen 3">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#productCarousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Anterior</span>
+        </a>
+        <a class="carousel-control-next" href="#productCarousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Siguiente</span>
+        </a>
+      </div>
+      
+      <h3 class="text-center mt-4">Precio: $1.349.990</h3>
+      
+      <div class="description mt-4">
+        <p>Disfruta de una experiencia de sonido envolvente con la Samsung Soundbar HW-Q990D 11.1.4 ch. Con una configuración de 11.1.4 canales y 22 parlantes incluidos, podrás sumergirte en tus películas y series favoritas como nunca antes. Conectividad HDMI, Bluetooth, Wi-Fi y control remoto para una fácil y conveniente operación.</p>
+        <p>El modelo Soundbar HW-Q990D ofrece una potencia RMS excepcional para un sonido potente y claro en tu sala de estar. Además, cuenta con una amplia gama de formatos de audio y video para una experiencia de entretenimiento completa. Disfruta de tus contenidos favoritos con la mejor calidad de sonido y la comodidad de un reproductor integrado.</p>
+
+      </div>
+      
+      <div class="video mt-4">
+        <h4>Video del Producto</h4>
+        <div class="embed-responsive embed-responsive-16by9">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/q7WC6LgDN0k?si=IA0rRdQbTv5mzsCT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>    
+            </div>
+            <ul>
+                <li>Condición del producto: Nuevo</li>
+                <li>Modelo: HW-Q990D</li>
+                <li>Dimensiones: 60 cm x 131 cm x 28 cm</li>
+                <li>Potencia: 41W</li>
+                <li>Cantidad de parlantes: 22</li>
+                <li>Características: Cuenta con bluetooth</li>
+              </ul>
+      </div>
+      </div>
+      
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <div class="left">
+        <h3>Mis Datos</h3>
+        <p>Email: maza23benjamin@gmail.com</p>
+        <p>Teléfono: +569 72111959</p>
+      </div>
+      <div class="right">
+        <h3>Contáctanos</h3>
+        <form action="/submit_form" method="POST">
+          <input type="text" name="nombre" placeholder="Nombre" required>
+          <input type="email" name="correo" placeholder="Correo" required>
+          <input type="tel" name="telefono" placeholder="Número de teléfono" required>
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+    </div>
+  </footer>
+  
+  <!-- Incluyendo jQuery y Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
